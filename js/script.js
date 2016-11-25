@@ -90,7 +90,7 @@ $(function() { // Same as document.addEventListener("DOMContentLoaded"...
         // On first load, show home view
         showLoading("#main-content");
         $ajaxUtils.sendGetRequest(
-            homeHtml,
+            homeHtmlUrl,
             function(responseText) {
                 document.querySelector("#main-content")
                     .innerHTML = responseText;
